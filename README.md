@@ -10,3 +10,4 @@ ai Pseudo original
 就这个问题我发表一下个人的看法供你参考。搜索引擎毕竟是机器，他抓取文章后会在数据库中与已有的文章做一个比对，如果发现有相似度很高的文章则认为是抄袭，反之认为是原创。当然如果你是原样照搬的，那么就订死是抄袭的。用伪原创工具转换后，文章中的部分词组被转换成同义词，搜索引擎再比对时，就认为是原创文章了。当然这也不是绝对的，看具体转换词组多少而言。
 
 演示：https://www.bunian.cn/ai/
+ <img src="https://raw.githubusercontent.com/bunian/Pseudo-original/master/1.png">
