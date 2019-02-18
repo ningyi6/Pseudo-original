@@ -86,7 +86,7 @@ function answers() {
 		return false;
 	}
 	var question = document.getElementById("content").value;
-	var url = "http://daohang.bunian.cn/ai/get-ai.php";
+	var url = "get-ai.php";
 	xmlhttp.open("POST", url, true);
 	xmlhttp.setRequestHeader( "Content-Type" , "application/x-www-form-urlencoded" );
 	xmlhttp.onreadystatechange = function () {
