@@ -1,3 +1,4 @@
+<?php
 /*
 不念博客https://www.bunian.cn/ai/
 没有版权 任意分发
