@@ -1,7 +1,7 @@
 # 不念智能AI文章伪原创
 ai Pseudo original
 qq交流群：200653131
-　
+# 接口地址源文件请进群下载
  # 安装环境
  PHP7+ 支持curl
  
