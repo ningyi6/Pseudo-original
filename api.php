@@ -9,7 +9,7 @@
 error_reporting(0); 
 
 if($_POST['info']){
-	$html = new article($_POST['info'],$_POST['key']);
+	$html = new article($_POST['info'],$_GET['key']);
 	echo $html->Content();
 }
 
