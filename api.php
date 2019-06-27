@@ -6,6 +6,7 @@
 介绍：火车头伪原创插件后端源代码，QQ群：200653131
 声明：您可以在保留这个版权声明的情况下进行商业活动。
 */
+error_reporting(0); 
 
 if($_POST['info']){
 	$html = new article($_POST['info'],$_POST['key']);
@@ -130,7 +131,7 @@ class article
 		curl_setopt($ch, CURLOPT_URL, $url);
 		$result = curl_exec($ch);
 		curl_close($ch);
-			$result = json_decode($result);
+			$result = json_decode($result,1);
 		if($result['error']==0){
 			return $result['data']['fanyi'];
 			
