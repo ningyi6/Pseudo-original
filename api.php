@@ -6,11 +6,11 @@
 介绍：火车头伪原创插件后端源代码，QQ群：200653131
 声明：您可以在保留这个版权声明的情况下进行商业活动。
 */
-error_reporting(0); 
 
 if($_POST['info']){
-	$html = new article($_POST['info'],$_GET['key']);
-	echo $html->Content();
+$html = new article($_POST['info'],$_POST['key']);
+
+echo $html->Content();
 }
 
 
@@ -94,8 +94,8 @@ class article
 		
 		if($infocount<=1000){
 			//如果小于或等于1000直接翻译
-			$zh_en=$this->translate($info,'zh-CN','EN');
-			$wyc=$this->translate($zh_en,'EN','zh-CN');
+			$zh_en=$this->translate($info);
+			$wyc=$this->translate($zh_en,'1');
 
 			
 		}else{
@@ -105,9 +105,9 @@ class article
 
 			for($i=0;$i<$arr;$i++){
 				
-				$zh_en=$this->translate($info,'zh-CN','EN');
+				$zh_en=$this->translate($info[$i]);
 				sleep(2);
-				$wyc.=$this->translate($zh_en,'EN','zh-CN');
+				$wyc.=$this->translate($zh_en,'1');
 				
 			}
 			
@@ -139,4 +139,4 @@ class article
 
 	}
 	
-}
+}	
