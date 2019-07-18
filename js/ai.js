@@ -39,7 +39,7 @@ if($('#content')){
             }
         }
 
-		$('#shengyu').text('5000' - (inum + iTotal+(eTotal - inum)));
+		$('#shengyu').text('1000' - (inum + iTotal+(eTotal - inum)));
 		$('#zishu').text(inum + iTotal+ (eTotal - inum));
     }
 
